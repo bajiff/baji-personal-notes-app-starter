@@ -1,0 +1,8 @@
+Daftar Catatan '/' Menampilkan catatan yang aktif.
+
+Arsip '/archives' Menampilkan catatan dengan status terarsip.
+Tambah Catatan '/notes/new' Menampilkan form untuk crafting catatan baru.
+
+Detail Catatan '/notes/:id' Menampilkan spesifikasi catatan berdasarkan ID unik.
+
+Halaman 404 '/*' Fallback jika ada pengunjung yang tersesat.
