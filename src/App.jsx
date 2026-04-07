@@ -1,6 +1,7 @@
 // ? App.jsx
+import React from 'react';
 import { getAllNotes } from './utils/local-data';
-import { NoteItem } from './components/index';
+import { NoteItem } from './components';
 import { useState } from 'react';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
         <h1>Baji Notes App</h1>
       </header>
       <main>
+        {notes.length > 0 ? (<h1>Notes Available ({notes.length})</h1>) : ''}
         <div className='notes-list'>
           {notes.length > 0 ? (
             notes.map(note => (

@@ -1,4 +1,5 @@
 // ? NoteItem.jsx
+import React from 'react';
 import { showFormattedDate } from "../utils";
 
 const NoteItem = ({ title, body, createdAt}) => {

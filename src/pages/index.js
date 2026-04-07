@@ -1,3 +1,5 @@
+import React from 'react';
+import React from 'react';
 import AddNotePage from "./AddNotePage";
 import ArchivePage from "./ArchivePage";
 import DetailPage from "./DetailPage";
