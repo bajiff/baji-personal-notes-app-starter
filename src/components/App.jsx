@@ -1,6 +1,6 @@
 // ? App.jsx
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { AddNotePage, ArchivePage, DetailPage, HomePage, NotFoundPage } from '../pages';
 
 const App = () => {
@@ -8,11 +8,13 @@ const App = () => {
     <div className='app-container'>
       <header>
         <h1>
-          <a href="/">Baji Notes App</a>
+          <Link to='/'>Baji App Notes</Link>
         </h1>
+        <h2>
+         <Link to='/archive'>Arsip</Link> 
+        </h2>
       </header>
       <main>
-        
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/notes/new' element={<AddNotePage/>} />
