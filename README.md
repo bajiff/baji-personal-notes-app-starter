@@ -1,9 +1,20 @@
-<!-- ? TOC -->
+<div id="top" align="center">
+  <h1>📝 Baji Personal Notes App</h1>
+  <p>
+    Aplikasi pencatatan pribadi interaktif yang dibangun menggunakan React.js.
+    <br />
+    <br />
+    <a href="https://bajiff.github.io/baji-personal-notes-app-starter/"><strong>Lihat Live Demo »</strong></a>
+    ·
+    <a href="https://github.com/bajiff/baji-personal-notes-app-starter/issues">Laporkan Bug</a>
+  </p>
+</div>
+
 <details>
-  <summary>Table of Contents</summary>
+  <summary><strong>Table of Contents</strong></summary>
   <ol>
     <li>
-      <a href="#about">About</a>
+      <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -15,71 +26,89 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
   </ol>
 </details>
 
-<!-- ABOUT -->
-<h2>Baji Personal Notes App</h2>
+<hr>
 
-![My-Personal-Notes](https://user-images.githubusercontent.com/72277295/218277164-516b80dc-6d31-471b-b04e-ac9f1893a5d2.png)
-This Project is a final submission to basic react course at dicoding. In this project you can use CRUD operation to create notes, search notes, archive notes, and more validation.
+<h2 id="about-the-project">About The Project</h2>
 
-<h3>Live Demo : https://personal-notes-thoriqas.vercel.app/</h3>
+![My-Personal-Notes](./assets/demo.png)
 
+Proyek ini adalah <i>Final Submission</i> (Tugas Akhir) untuk kelas <b>Belajar Membuat Aplikasi Web dengan React</b> di Dicoding. Di dalam proyek ini, Anda dapat menggunakan operasi CRUD untuk membuat catatan, mencari catatan, mengarsipkan catatan, dan memvalidasi sisa karakter pada judul.
 
-### Built With
+<h3 id="built-with">Built With</h3>
 
 * ![Javascript](https://img.shields.io/badge/Javascript-fff?style=for-the-badge&logo=Javascript)
 * ![React](https://img.shields.io/badge/React-fff?style=for-the-badge&logo=React)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
+<h2 id="getting-started">Getting Started</h2>
 
-<!-- GETTING STARTED -->
-## Getting Started
+Berikut adalah instruksi untuk melakukan <i>setup</i> proyek ini di <i>local environment</i> Anda agar dapat berjalan dengan baik.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+<h3 id="prerequisites">Prerequisites</h3>
+Pastikan Anda sudah menginstal npm di perangkat Anda.
+* npm
 
+```bash
+npm install npm@latest -g
+```
+<h3 id="installation">Installation</h3>
 
+Clone the repo
 
-### Installation
+```bash
+git clone https://github.com/bajiff/baji-personal-notes-app-starter.git
+```
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Go to project
+```bash
+cd baji-personal-notes-app-starter
+```
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Muhthoriqas/Notes-ReactJS.git
-   ```
-2. Go to project
-   ```sh
-   cd Notes-ReactJS
-   ```
-3. install npm 
-   ```sh
-   npm i
-   ```
-4. run project
-   ```sh
-   npm start
-   ```
- 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Install NPM packages
+```bash
+npm install
+```
 
-<!-- CONTRIBUTING -->
-## Contributing
+Run project (Vite Development Server)
+```bash
+npm run dev
+```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+<h2 id="features">Features</h2>
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+<ul>
+<li><b>Create:</b> Menambahkan catatan baru dengan validasi sisa karakter judul.</li>
+<li><b>Read:</b> Menampilkan daftar catatan yang aktif dan yang diarsipkan.</li>
+<li><b>Search:</b> Mencari catatan secara spesifik berdasarkan kata kunci judul.</li>
+<li><b>Delete:</b> Menghapus catatan secara permanen.</li>
+<li><b>Archive:</b> Memindahkan catatan bolak-balik antara status aktif dan arsip.</li>
+</ul>
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b main `)
-3. Commit your Changes (`git commit -m 'Add some feature'`)
-4. Push to the Branch (`git push origin main`)
-5. Open a Pull Request
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<h2 id="contributing">Contributing</h2>
+
+Kontribusi adalah hal yang membuat komunitas <i>open source</i> menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi. Setiap kontribusi yang Anda berikan akan <b>sangat dihargai</b>.
+
+Jika Anda memiliki saran yang dapat membuat aplikasi ini menjadi lebih baik, silakan <i>fork repo</i> ini dan buat <i>pull request</i>. Anda juga bisa membuka <i>issue</i> dengan tag "enhancement".
+Jangan lupa berikan bintang (Star) pada proyek ini! Terima kasih!
+
+<ol>
+<li>Fork the Project</li>
+<li>Create your Feature Branch (<code>git checkout -b feature/AmazingFeature</code>)</li>
+<li>Commit your Changes (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+<li>Push to the Branch (<code>git push origin feature/AmazingFeature</code>)</li>
+<li>Open a Pull Request</li>
+</ol>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
