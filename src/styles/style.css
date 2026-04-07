@@ -93,6 +93,7 @@ main {
 
 .note-item__title {
   margin: 4px 0;
+  text-decoration: underline;
 }
 
 .note-item__createdAt {

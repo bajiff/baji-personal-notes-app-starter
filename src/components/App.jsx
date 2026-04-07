@@ -7,9 +7,12 @@ const App = () => {
   return(
     <div className='app-container'>
       <header>
-        <h1>Baji Notes App</h1>
+        <h1>
+          <a href="/">Baji Notes App</a>
+        </h1>
       </header>
       <main>
+        
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/notes/new' element={<AddNotePage/>} />
