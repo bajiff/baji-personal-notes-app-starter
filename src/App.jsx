@@ -1,35 +1,26 @@
 // ? App.jsx
-import { Component } from 'react';
 import { getAllNotes } from './utils/local-data';
+import { NoteItem } from './components/index';
+import { useState } from 'react';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      notes: getAllNotes()
-    }
-  }
-  
-  render() {
-    const {notes} = this.state;
-    return(
-      <section className="app-container">
-        <header>
-          <h1>Baji Notes App</h1>
-        </header>
-        <main>
-          <ul>
-            {notes.map(note => (
-              <>
-                <br />
-                <li>{note.body}</li>
-                <br />
-              </>
-            ))}
-          </ul>
-        </main>
-      </section>
-    );
-  };
+const App = () => {
+  const [notes, setNotes] = useState(getAllNotes());
+  return(
+    <section className='app-container'>
+      <header>
+        <h1>Baji Notes App</h1>
+      </header>
+      <main>
+        <div className='notes-list'>
+          {notes.length > 0 ? (
+            notes.map(note => (
+            <NoteItem key={note.id} title={note.title} body={note.body} createdAt={note.createdAt} />
+            ))
+          ) : "Kosong"}
+        </div>
+      </main>
+    </section>
+  );
 }
+
+export default App
